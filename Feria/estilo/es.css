@@ -1,0 +1,113 @@
+/* Estilos Generales */
+body {
+  font-family: Arial, sans-serif; /* Fuente por defecto */
+  margin: 0; /* Elimina los márgenes predeterminados del body */
+  background-color: #f4f4f4; /* Color de fondo general */
+  color: #333; /* Color del texto por defecto */
+}
+
+/* Header */
+header {
+  background-color: #333; /* Color de fondo del header */
+  color: #fff; /* Color del texto en el header */
+  padding: 10px 0; /* Espaciado interno arriba y abajo */
+  text-align: center; /* Centra el contenido del header */
+}
+
+.logo {
+  font-size: 2em; /* Tamaño del texto del logo */
+  margin-bottom: 10px; /* Espacio debajo del logo */
+}
+
+/* Marquee para el logo */
+marquee {
+  width: 100%; /* Ocupa todo el ancho */
+  display: inline-block; /* Permite aplicar estilos de bloque */
+}
+
+/* Navegación */
+nav ul {
+  list-style: none; /* Elimina las viñetas de la lista */
+  padding: 0; /* Elimina el padding de la lista */
+  margin: 0; /* Elimina el margen de la lista */
+  display: flex; /* Usa flexbox para alinear los elementos */
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+nav li {
+  margin: 0 15px; /* Espaciado entre los elementos de la lista */
+}
+
+nav a {
+  color: #fff; /* Color del texto de los enlaces */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  padding: 5px 10px; /* Espaciado interno de los enlaces */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+nav a:hover {
+  background-color: #555; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Main */
+main {
+  padding: 20px; /* Espaciado interno en el main */
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+/* Banner */
+.banner {
+  text-align: center; /* Centra la imagen del banner */
+  margin-bottom: 20px; /* Espacio debajo del banner */
+}
+
+.banner img {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Sección de Películas */
+.movies {
+  margin-bottom: 30px; /* Espacio debajo de la sección de películas */
+}
+
+.movies h2 {
+  font-size: 1.8em; /* Tamaño del título de la sección */
+  margin-bottom: 15px; /* Espacio debajo del título */
+  border-bottom: 2px solid #ccc; /* Línea divisoria debajo del título */
+  padding-bottom: 5px; /* Espacio interno debajo de la línea */
+}
+
+/* Grid de Películas */
+.movie-grid {
+  display: grid; /* Usa grid para el diseño */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crea columnas responsivas */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+.movie-item {
+  border: 1px solid #ddd; /* Borde alrededor de cada elemento de película */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  text-align: center; /* Centra el contenido */
+  transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+}
+
+.movie-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra al pasar el ratón */
+}
+
+.movie-item img {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 10px; /* Espacio debajo de la imagen */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.movie-item h3 {
+  font-size: 1.2em; /* Tamaño del título de la película */
+  margin: 0; /* Elimina los márgenes predeterminados */
+}
